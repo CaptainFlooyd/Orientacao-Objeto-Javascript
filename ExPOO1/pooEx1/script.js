@@ -2,12 +2,13 @@ class Conta{
    constructor(saldo) {
       this.saldo = saldo;
    }
-   
+   /* Deposit */
 deposito(valor) {
     this.saldo += valor;
 
 
 }
+/* WhithDraw */
 saque(retirar){
        this.saldo -= retirar ; 
 }
@@ -16,11 +17,15 @@ saque(retirar){
 
 let conta = new Conta (1000);
 
+conta.deposito(200);
 
-conta.deposito(1000);
+console.log(conta);
 
-console.log(conta)
+conta.saque(300);
 
-conta.saque(200)
+console.log(conta);
 
-console.log(conta)
+
+
+
+
